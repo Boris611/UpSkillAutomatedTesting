@@ -4,7 +4,7 @@ public class Book {
 
 
     private int id;
-    private String nameOfTheBook;
+    private String name;
     private String authors;
     private String publisher;
     private int yearOfPublishing;
@@ -12,9 +12,9 @@ public class Book {
     private double price;
     private String bindingType;
 
-    public Book(int id, String nameOfTheBook, String authors, String publisher, int yearOfPublishing, int numberOfPages, double price, String bindingType) {
+    public Book(int id, String name, String authors, String publisher, int yearOfPublishing, int numberOfPages, double price, String bindingType) {
         this.id = id;
-        this.nameOfTheBook = nameOfTheBook;
+        this.name = name;
         this.authors = authors;
         this.publisher = publisher;
         this.yearOfPublishing = yearOfPublishing;
@@ -31,12 +31,13 @@ public class Book {
         this.id = id;
     }
 
-    public String getNameOfTheBook() {
-        return nameOfTheBook;
+    public String getName() {
+
+        return name;
     }
 
-    public void setNameOfTheBook(String nameOfTheBook) {
-        this.nameOfTheBook = nameOfTheBook;
+    public void getName(String nameOfTheBook) {
+        this.name = nameOfTheBook;
     }
 
     public String getAuthors() {
@@ -91,7 +92,7 @@ public class Book {
     public String toString() {
         return "Book{" +
                 "id=" + id +'\n'+
-                ", nameOfTheBook='" + nameOfTheBook + '\'' + '\n'+
+                ", name='" + name + '\'' + '\n'+
                 ", authors='" + authors + '\'' +'\n'+
                 ", publisher='" + publisher + '\'' +'\n'+
                 ", yearOfPublishing=" + yearOfPublishing +'\n'+
