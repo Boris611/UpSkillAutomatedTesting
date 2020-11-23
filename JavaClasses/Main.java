@@ -15,7 +15,7 @@ public class Main {
         System.out.println("список книг заданного автора: ");
         for (int i = 0; i < book.size(); i++) {
             if (book.get(i).getAuthors().equals(author)) {
-                System.out.println(book.get(i).getNameOfTheBook());
+                System.out.println(book.get(i).getName());
             }
         }
 
@@ -23,7 +23,7 @@ public class Main {
         System.out.println("список книг, выпущенных заданным издательством: ");
         for (int i = 0; i < book.size(); i++) {
             if (book.get(i).getPublisher().equals(publi)) {
-                System.out.println(book.get(i).getNameOfTheBook());
+                System.out.println(book.get(i).getName());
             }
         }
 
@@ -32,7 +32,7 @@ public class Main {
         System.out.println("список книг, выпущенных после заданного года ВКЛЮЧИТЕЛЬНО.");
         for (int i = 0; i < book.size(); i++) {
             if (book.get(i).getYearOfPublishing() >= years) {
-                System.out.println(book.get(i).getNameOfTheBook());
+                System.out.println(book.get(i).getName());
             }
         }
     }
