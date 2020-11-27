@@ -44,11 +44,6 @@ public class Airport {
             }
         }
 
-
-
-
-
-
         return planeWithMaxCapacity;
     }
 
@@ -90,7 +85,7 @@ public class Airport {
     public Airport sortByMaxDistance() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane o1, Plane o2) {
-                return o1.() - o2.();
+                return o1.maxFlightDistance() - o2.maxFlightDistance();
             }
         });
         return this;
@@ -101,7 +96,7 @@ public class Airport {
     public Airport sortByMaxSpeed() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane o1, Plane o2) {
-                return o1.() - o2.();
+                return o1.maxSpeed;() - o2.maxSpeed;();
             }
         });
         return this;
