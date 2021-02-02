@@ -2,13 +2,13 @@ package MainTask;
 
 public class CargoCarriage extends Train {
 
-    public String typeOfCargo;
-    public int loadAmount;
+    private String typeOfCargo;
+    private int liftingCapacity;
 
-    public CargoCarriage(int id, int averageSpeed, int quantityOfCarriage, String typeOfCarriage, String typeOfCargo, int loadAmount) {
-        super(id, averageSpeed, quantityOfCarriage, typeOfCarriage);
+    public CargoCarriage(int id, int averageSpeed, int comfortLevel, int yearOfIssue, String typeOfCargo, int liftingCapacity) {
+        super(id, averageSpeed, comfortLevel, yearOfIssue);
         this.typeOfCargo = typeOfCargo;
-        this.loadAmount = loadAmount;
+        this.liftingCapacity = liftingCapacity;
     }
 
     public String getTypeOfCargo() {
@@ -19,20 +19,19 @@ public class CargoCarriage extends Train {
         this.typeOfCargo = typeOfCargo;
     }
 
-    public int getLoadAmount() {
-        return loadAmount;
+    public int getLiftingCapacity() {
+        return liftingCapacity;
     }
 
-    public void setLoadAmount(int loadAmount) {
-        this.loadAmount = loadAmount;
+    public void setLiftingCapacity(int liftingCapacity) {
+        this.liftingCapacity = liftingCapacity;
     }
-
 
     @Override
     public String toString() {
         return "CargoCarriage{" +
                 "typeOfCargo='" + typeOfCargo + '\'' +
-                ", loadAmount=" + loadAmount +
+                ", liftingCapacity=" + liftingCapacity +
                 '}';
     }
 }

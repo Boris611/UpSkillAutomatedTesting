@@ -3,12 +3,12 @@ package MainTask;
 public class PassengerCarriage extends Train {
 
     private int numberOfSeats;
-    private String comfortLevel;
+    private int amountOfLuggage;
 
-    public PassengerCarriage(int id, int averageSpeed, int quantityOfCarriage, String typeOfCarriage, int numberOfSeats, String comfortLevel) {
-        super(id, averageSpeed, quantityOfCarriage, typeOfCarriage);
+    public PassengerCarriage(int id, int averageSpeed, int comfortLevel, int yearOfIssue, int numberOfSeats, int amountOfLuggage) {
+        super(id, averageSpeed, comfortLevel, yearOfIssue);
         this.numberOfSeats = numberOfSeats;
-        this.comfortLevel = comfortLevel;
+        this.amountOfLuggage = amountOfLuggage;
     }
 
     public int getNumberOfSeats() {
@@ -19,19 +19,19 @@ public class PassengerCarriage extends Train {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public String getComfortLevel() {
-        return comfortLevel;
+    public int getAmountOfLuggage() {
+        return amountOfLuggage;
     }
 
-    public void setComfortLevel(String comfortLevel) {
-        this.comfortLevel = comfortLevel;
+    public void setAmountOfLuggage(int amountOfLuggage) {
+        this.amountOfLuggage = amountOfLuggage;
     }
 
     @Override
     public String toString() {
         return "PassengerCarriage{" +
                 "numberOfSeats=" + numberOfSeats +
-                ", comfortLevel='" + comfortLevel + '\'' +
+                ", amountOfLuggage=" + amountOfLuggage +
                 '}';
     }
 }

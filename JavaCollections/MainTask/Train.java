@@ -2,37 +2,36 @@ package MainTask;
 
 public class Train extends Transport {
 
-    public int quantityOfCarriage;
-    public String typeOfCarriage;
+    private int comfortLevel;
+    private int yearOfIssue;
 
-    public Train(int id, int averageSpeed, int quantityOfCarriage, String typeOfCarriage) {
+    public Train(int id, int averageSpeed, int comfortLevel, int yearOfIssue) {
         super(id, averageSpeed);
-        this.quantityOfCarriage = quantityOfCarriage;
-        this.typeOfCarriage = typeOfCarriage;
+        this.comfortLevel = comfortLevel;
+        this.yearOfIssue = yearOfIssue;
     }
 
-    public int getQuantityOfCarriage() {
-        return quantityOfCarriage;
+    public int getComfortLevel() {
+        return comfortLevel;
     }
 
-    public void setQuantityOfCarriage(int quantityOfCarriage) {
-        this.quantityOfCarriage = quantityOfCarriage;
+    public void setComfortLevel(int comfortLevel) {
+        this.comfortLevel = comfortLevel;
     }
 
-    public String getTypeOfCarriage() {
-        return typeOfCarriage;
+    public int getYearOfIssue() {
+        return yearOfIssue;
     }
 
-    public void setTypeOfCarriage(String typeOfCarriage) {
-        this.typeOfCarriage = typeOfCarriage;
+    public void setYearOfIssue(int yearOfIssue) {
+        this.yearOfIssue = yearOfIssue;
     }
 
     @Override
     public String toString() {
         return "Train{" +
-                "quantityOfCarriage=" + quantityOfCarriage +
-                ", typeOfCarriage='" + typeOfCarriage + '\'' +
+                "comfortLevel=" + comfortLevel +
+                ", yearOfIssue=" + yearOfIssue +
                 '}';
     }
-
 }
